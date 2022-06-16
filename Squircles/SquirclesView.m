@@ -6,6 +6,7 @@
 //
 
 #import "SquirclesView.h"
+#import "Foundation/Foundation.h"
 
 @implementation SquirclesView
 
@@ -13,7 +14,7 @@
 {
     self = [super initWithFrame:frame isPreview:isPreview];
     if (self) {
-        [self setAnimationTimeInterval:1/30.0];
+        [self setAnimationTimeInterval:1/60.0];
     }
     return self;
 }
@@ -31,6 +32,7 @@
 - (void)drawRect:(NSRect)rect
 {
     [super drawRect:rect];
+    [[NSBezierPath bezierPathWithOvalInRect:rect] fill];
 }
 
 - (void)animateOneFrame

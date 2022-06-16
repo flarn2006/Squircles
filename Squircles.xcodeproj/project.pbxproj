@@ -7,17 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56082811285A9C64001E969C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56082810285A9C64001E969C /* AppDelegate.m */; };
+		56082813285A9C64001E969C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56082812285A9C64001E969C /* Assets.xcassets */; };
+		56082816285A9C64001E969C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56082814285A9C64001E969C /* MainMenu.xib */; };
+		56082818285A9C64001E969C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56082817285A9C64001E969C /* main.m */; };
+		5608281E285A9D1D001E969C /* Squircles.saver in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 562DC3C7285A96450093F342 /* Squircles.saver */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		56082824285A9F49001E969C /* SquircleChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 56082822285A9F49001E969C /* SquircleChain.h */; };
+		56082825285A9F49001E969C /* SquircleChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 56082823285A9F49001E969C /* SquircleChain.m */; };
+		56082826285A9F49001E969C /* SquircleChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 56082823285A9F49001E969C /* SquircleChain.m */; };
+		56082827285A9F57001E969C /* SquirclesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 562DC3CC285A96450093F342 /* SquirclesView.m */; };
+		5608282A285AA655001E969C /* SquirclesTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56082829285AA655001E969C /* SquirclesTestView.m */; };
 		562DC3CB285A96450093F342 /* SquirclesView.h in Headers */ = {isa = PBXBuildFile; fileRef = 562DC3CA285A96450093F342 /* SquirclesView.h */; };
 		562DC3CD285A96450093F342 /* SquirclesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 562DC3CC285A96450093F342 /* SquirclesView.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5608281F285A9D1D001E969C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 562DC3BE285A96450093F342 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 562DC3C6285A96450093F342;
+			remoteInfo = Squircles;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		56082821285A9D1D001E969C /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5608281E285A9D1D001E969C /* Squircles.saver in Embed PlugIns */,
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5608280D285A9C64001E969C /* SquirclesTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquirclesTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5608280F285A9C64001E969C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		56082810285A9C64001E969C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		56082812285A9C64001E969C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56082815285A9C64001E969C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		56082817285A9C64001E969C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		56082819285A9C65001E969C /* SquirclesTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SquirclesTest.entitlements; sourceTree = "<group>"; };
+		56082822285A9F49001E969C /* SquircleChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SquircleChain.h; sourceTree = "<group>"; };
+		56082823285A9F49001E969C /* SquircleChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SquircleChain.m; sourceTree = "<group>"; };
+		56082828285AA655001E969C /* SquirclesTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SquirclesTestView.h; sourceTree = "<group>"; };
+		56082829285AA655001E969C /* SquirclesTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SquirclesTestView.m; sourceTree = "<group>"; };
 		562DC3C7285A96450093F342 /* Squircles.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Squircles.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		562DC3CA285A96450093F342 /* SquirclesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SquirclesView.h; sourceTree = "<group>"; };
 		562DC3CC285A96450093F342 /* SquirclesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SquirclesView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5608280A285A9C64001E969C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		562DC3C4285A96450093F342 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -28,11 +80,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5608280E285A9C64001E969C /* SquirclesTest */ = {
+			isa = PBXGroup;
+			children = (
+				5608280F285A9C64001E969C /* AppDelegate.h */,
+				56082810285A9C64001E969C /* AppDelegate.m */,
+				56082812285A9C64001E969C /* Assets.xcassets */,
+				56082814285A9C64001E969C /* MainMenu.xib */,
+				56082817285A9C64001E969C /* main.m */,
+				56082819285A9C65001E969C /* SquirclesTest.entitlements */,
+				56082828285AA655001E969C /* SquirclesTestView.h */,
+				56082829285AA655001E969C /* SquirclesTestView.m */,
+			);
+			path = SquirclesTest;
+			sourceTree = "<group>";
+		};
+		5608281D285A9D1D001E969C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		562DC3BD285A96450093F342 = {
 			isa = PBXGroup;
 			children = (
 				562DC3C9285A96450093F342 /* Squircles */,
+				5608280E285A9C64001E969C /* SquirclesTest */,
 				562DC3C8285A96450093F342 /* Products */,
+				5608281D285A9D1D001E969C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -40,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				562DC3C7285A96450093F342 /* Squircles.saver */,
+				5608280D285A9C64001E969C /* SquirclesTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -49,6 +126,8 @@
 			children = (
 				562DC3CA285A96450093F342 /* SquirclesView.h */,
 				562DC3CC285A96450093F342 /* SquirclesView.m */,
+				56082822285A9F49001E969C /* SquircleChain.h */,
+				56082823285A9F49001E969C /* SquircleChain.m */,
 			);
 			path = Squircles;
 			sourceTree = "<group>";
@@ -60,6 +139,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56082824285A9F49001E969C /* SquircleChain.h in Headers */,
 				562DC3CB285A96450093F342 /* SquirclesView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +147,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		5608280C285A9C64001E969C /* SquirclesTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5608281C285A9C65001E969C /* Build configuration list for PBXNativeTarget "SquirclesTest" */;
+			buildPhases = (
+				56082809285A9C64001E969C /* Sources */,
+				5608280A285A9C64001E969C /* Frameworks */,
+				5608280B285A9C64001E969C /* Resources */,
+				56082821285A9D1D001E969C /* Embed PlugIns */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56082820285A9D1D001E969C /* PBXTargetDependency */,
+			);
+			name = SquirclesTest;
+			productName = SquirclesTest;
+			productReference = 5608280D285A9C64001E969C /* SquirclesTest.app */;
+			productType = "com.apple.product-type.application";
+		};
 		562DC3C6285A96450093F342 /* Squircles */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 562DC3D0285A96450093F342 /* Build configuration list for PBXNativeTarget "Squircles" */;
@@ -94,6 +193,9 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					5608280C285A9C64001E969C = {
+						CreatedOnToolsVersion = 13.4;
+					};
 					562DC3C6285A96450093F342 = {
 						CreatedOnToolsVersion = 13.4;
 					};
@@ -113,11 +215,21 @@
 			projectRoot = "";
 			targets = (
 				562DC3C6285A96450093F342 /* Squircles */,
+				5608280C285A9C64001E969C /* SquirclesTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5608280B285A9C64001E969C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56082813285A9C64001E969C /* Assets.xcassets in Resources */,
+				56082816285A9C64001E969C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		562DC3C5285A96450093F342 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -128,17 +240,97 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		56082809285A9C64001E969C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56082827285A9F57001E969C /* SquirclesView.m in Sources */,
+				56082818285A9C64001E969C /* main.m in Sources */,
+				56082811285A9C64001E969C /* AppDelegate.m in Sources */,
+				56082826285A9F49001E969C /* SquircleChain.m in Sources */,
+				5608282A285AA655001E969C /* SquirclesTestView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		562DC3C3285A96450093F342 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				562DC3CD285A96450093F342 /* SquirclesView.m in Sources */,
+				56082825285A9F49001E969C /* SquircleChain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		56082820285A9D1D001E969C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 562DC3C6285A96450093F342 /* Squircles */;
+			targetProxy = 5608281F285A9D1D001E969C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		56082814285A9C64001E969C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56082815285A9C64001E969C /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		5608281A285A9C65001E969C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SquirclesTest/SquirclesTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = place.sparks.SquirclesTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		5608281B285A9C65001E969C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SquirclesTest/SquirclesTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = place.sparks.SquirclesTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
 		562DC3CE285A96450093F342 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -287,6 +479,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5608281C285A9C65001E969C /* Build configuration list for PBXNativeTarget "SquirclesTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5608281A285A9C65001E969C /* Debug */,
+				5608281B285A9C65001E969C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		562DC3C1285A96450093F342 /* Build configuration list for PBXProject "Squircles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
