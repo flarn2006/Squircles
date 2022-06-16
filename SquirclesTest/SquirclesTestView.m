@@ -16,7 +16,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    [self setSegmentLength:200.0];
+    [self setSegmentLength:10.0];
     NSPoint center;
     center.x = [self frame].origin.x + [self frame].size.width / 2;
     center.y = [self frame].origin.y + [self frame].size.height / 2;
@@ -43,8 +43,7 @@
 
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
-    [chain stroke];
+    [chain drawWithVisiblePivot:YES];
 }
-
 
 @end

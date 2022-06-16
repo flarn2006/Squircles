@@ -730,7 +730,7 @@
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p2u-Rk-l44">
                                 <rect key="frame" x="183" y="14" width="223" height="28"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1000" doubleValue="200" tickMarkPosition="above" sliderType="linear" id="pos-an-yYy"/>
+                                <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="100" doubleValue="10" tickMarkPosition="above" sliderType="linear" id="pos-an-yYy"/>
                                 <connections>
                                     <binding destination="sYW-wu-YMo" name="value" keyPath="selection.segmentLength" id="GfD-nG-rFm"/>
                                 </connections>

@@ -15,8 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)addSegmentOfLength:(CGFloat)length;
 - (void)turn;
-- (void)stroke;
+- (void)clear;
 
+- (void)drawWithVisiblePivot:(bool)drawPivot;
 - (NSString*)debugText;
 
 @end
