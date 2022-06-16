@@ -9,4 +9,6 @@
 
 @interface SquirclesView : ScreenSaverView
 
+- (void)turn;
+
 @end
