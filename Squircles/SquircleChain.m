@@ -15,6 +15,7 @@
     CGFloat angle;
     CGFloat radius;
     bool clockwise;
+    CGFloat alpha;
 }
 
 + (SquircleChain*)chainWithStartingPivot:(NSPoint)pivot radius:(CGFloat)radius {
@@ -24,6 +25,7 @@
     chain->angle = (CGFloat)rand() / RAND_MAX;
     chain->radius = radius;
     chain->clockwise = rand() & 1;
+    chain->alpha = 1.0;
     return chain;
 }
 
@@ -52,6 +54,11 @@
     [segments removeAllObjects];
 }
 
+- (void)fade {
+    if (alpha > 0)
+        alpha -= 0.05;
+}
+
 - (NSPoint)currentPivot {
     return pivot;
 }
@@ -63,7 +70,7 @@
 - (void)drawWithVisiblePivot:(bool)drawPivot {
     CGFloat hue = 0.0;
     for (NSBezierPath* segment in segments) {
-        [[NSColor colorWithDeviceHue:hue saturation:1.0 brightness:1.0 alpha:1.0] setStroke];
+        [[NSColor colorWithDeviceHue:hue saturation:1.0 brightness:1.0 alpha:alpha] setStroke];
         [segment stroke];
         hue += 0.05;
         if (hue >= 1.0) hue -= 1.0;

@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)addSegmentOfLength:(CGFloat)length;
 - (void)turn;
 - (void)clear;
+- (void)fade;
 
 - (NSPoint)currentPivot;
 - (CGFloat)currentRadius;
