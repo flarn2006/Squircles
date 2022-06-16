@@ -14,9 +14,17 @@
     int segmentsUntilTurn;
 }
 
+- (void)newChain {
+    NSPoint center;
+    center.x = [self frame].origin.x + [self frame].size.width / 2;
+    center.y = [self frame].origin.y + [self frame].size.height / 2;
+    chain = [SquircleChain chainWithStartingPivot:center radius:50.0];
+    [self turn];
+}
+
 - (void)turn {
     [chain turn];
-    segmentsUntilTurn = rand() & 255;
+    segmentsUntilTurn = 3 + rand() % (int)[chain currentRadius]/2;
 }
 
 - (instancetype)initWithFrame:(NSRect)frame isPreview:(BOOL)isPreview
@@ -25,13 +33,7 @@
     if (self) {
         [self setAnimationTimeInterval:1/60.0];
     }
-    
-    NSPoint center;
-    center.x = frame.origin.x + frame.size.width / 2;
-    center.y = frame.origin.y + frame.size.height / 2;
-    chain = [SquircleChain chainWithStartingPivot:center radius:50.0];
-    [self turn];
-    
+    [self newChain];
     return self;
 }
 
@@ -53,6 +55,8 @@
 
 - (void)animateOneFrame
 {
+    if (!NSPointInRect([chain currentPivot], [self frame]))
+        [self newChain];
     [chain addSegmentOfLength:8.0];
     if (--segmentsUntilTurn == 0)
         [self turn];

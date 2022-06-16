@@ -9,6 +9,7 @@
 
 @interface SquirclesView : ScreenSaverView
 
+- (void)newChain;
 - (void)turn;
 
 @end

@@ -52,6 +52,14 @@
     [segments removeAllObjects];
 }
 
+- (NSPoint)currentPivot {
+    return pivot;
+}
+
+- (CGFloat)currentRadius {
+    return radius;
+}
+
 - (void)drawWithVisiblePivot:(bool)drawPivot {
     CGFloat hue = 0.0;
     for (NSBezierPath* segment in segments) {

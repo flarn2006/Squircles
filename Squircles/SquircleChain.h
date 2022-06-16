@@ -17,6 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)turn;
 - (void)clear;
 
+- (NSPoint)currentPivot;
+- (CGFloat)currentRadius;
+
 - (void)drawWithVisiblePivot:(bool)drawPivot;
 - (NSString*)debugText;
 
