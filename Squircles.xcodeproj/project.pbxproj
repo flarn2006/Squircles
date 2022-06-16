@@ -17,6 +17,7 @@
 		56082826285A9F49001E969C /* SquircleChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 56082823285A9F49001E969C /* SquircleChain.m */; };
 		56082827285A9F57001E969C /* SquirclesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 562DC3CC285A96450093F342 /* SquirclesView.m */; };
 		5608282A285AA655001E969C /* SquirclesTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56082829285AA655001E969C /* SquirclesTestView.m */; };
+		5608282E285ABA21001E969C /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 5608282D285ABA21001E969C /* thumbnail.png */; };
 		562DC3CB285A96450093F342 /* SquirclesView.h in Headers */ = {isa = PBXBuildFile; fileRef = 562DC3CA285A96450093F342 /* SquirclesView.h */; };
 		562DC3CD285A96450093F342 /* SquirclesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 562DC3CC285A96450093F342 /* SquirclesView.m */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		56082823285A9F49001E969C /* SquircleChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SquircleChain.m; sourceTree = "<group>"; };
 		56082828285AA655001E969C /* SquirclesTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SquirclesTestView.h; sourceTree = "<group>"; };
 		56082829285AA655001E969C /* SquirclesTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SquirclesTestView.m; sourceTree = "<group>"; };
+		5608282D285ABA21001E969C /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
 		562DC3C7285A96450093F342 /* Squircles.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Squircles.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		562DC3CA285A96450093F342 /* SquirclesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SquirclesView.h; sourceTree = "<group>"; };
 		562DC3CC285A96450093F342 /* SquirclesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SquirclesView.m; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				562DC3CC285A96450093F342 /* SquirclesView.m */,
 				56082822285A9F49001E969C /* SquircleChain.h */,
 				56082823285A9F49001E969C /* SquircleChain.m */,
+				5608282D285ABA21001E969C /* thumbnail.png */,
 			);
 			path = Squircles;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5608282E285ABA21001E969C /* thumbnail.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
